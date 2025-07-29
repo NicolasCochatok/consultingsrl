@@ -61,4 +61,16 @@ document.addEventListener('DOMContentLoaded', () => {
     ScrollReveal().reveal('section', { distance: '50px', duration: 800, easing: 'ease-out', origin: 'bottom' });
     ScrollReveal().reveal('.card, .servicio, .gallery-item', { interval: 100 });
   }
+
+  const carousel = document.querySelector('.carousel');
+  if (carousel) {
+    const slides = carousel.querySelectorAll('img');
+    let current = 0;
+    slides[current].classList.add('active');
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 3000);
+  }
 });
