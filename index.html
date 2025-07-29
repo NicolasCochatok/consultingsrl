@@ -11,65 +11,114 @@
 <body>
   <header>
     <div class="top-bar">
-      <span>☎ +54 11 5258-XXXX</span>
+      <span>☎ +54 9 11 6897 3125</span>
       <span>✉ <a href="mailto:contacto@consulting.com.ar">contacto@consulting.com.ar</a></span>
     </div>
     <div class="container header-content">
-      <img src="img/Logo_completo_consulting.png" alt="Consulting" class="logo">
+      <a href="index.html" class="logo-link">
+        <img src="img/consulting_versioncolor_sinfondo.png" alt="Consulting" class="logo">
+      </a>
       <nav id="nav">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="servicios.html">Servicios</a></li>
           <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="clientes.html">Acceso a Clientes</a></li>
         </ul>
       </nav>
       <button class="menu-toggle" id="menu-toggle">☰</button>
     </div>
   </header>
-  <section class="hero" style="background-image:url('img/banner.png');">
-    <div class="overlay"></div>
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Simplifying and adding value to your business...</h1>
-      <a href="nosotros.html" class="btn">Conocé más</a>
+  <section class="hero-slider">
+    <div class="slide active" style="background-image:url('img/certificacion_tecnica.png');">
+      <div class="overlay-dark"></div>
+      <div class="hero-content">
+        <h1>Certificaciones Técnicas Personalizadas</h1>
+        <p>Agilidad, cumplimiento y soporte para cada proyecto.</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image:url('img/primer-plano-de-hombre-de-negocios-con-tableta-digital.jpg');">
+      <div class="overlay-dark"></div>
+      <div class="hero-content">
+        <h1>Avisos de vencimientos y seguimiento online</h1>
+        <p>Monitoreamos tus certificados para que nunca pierdas la vigencia.</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image:url('img/fondo_empresarial.png');">
+      <div class="overlay-dark"></div>
+      <div class="hero-content">
+        <h1>Cotizaciones claras y rápidas</h1>
+        <p>Te proponemos la mejor ruta técnica y económica según tu producto.</p>
+      </div>
+    </div>
+    <button class="prev">&#8249;</button>
+    <button class="next">&#8250;</button>
+  </section>
+  <section id="que-hacemos" data-aos="fade-up">
+    <div class="container">
+      <p class="intro">Ayudamos a empresas que importan, producen o distribuyen a cumplir con los requisitos técnicos y normativos en Argentina y Latinoamérica. Desde la evaluación inicial hasta la obtención del certificado final, nos ocupamos de cada paso.</p>
+      <div class="mini-cards">
+        <div class="mini-card">
+          <h3>Análisis técnico inmediato</h3>
+          <p>Revisamos fichas, normas y ensayos para definir el camino más corto.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Gestión ante organismos</h3>
+          <p>Interactuamos con Organismos de Certificación de Productos y demás entidades por vos.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Alertas y recordatorios</h3>
+          <p>Te avisamos cada vencimiento para que no pierdas la habilitación.</p>
+        </div>
+      </div>
+      <a href="servicios.html" class="btn">Conocé nuestros servicios</a>
     </div>
   </section>
   <section class="servicios-dest" data-aos="fade-up">
     <div class="container">
       <div class="servicio">
-        <img src="img/iconos/cert.svg" alt="Certificación">
+        <img src="img/iconos/diploma_7864592.png" alt="Certificación">
         <h3>Certificación de productos</h3>
       </div>
       <div class="servicio">
-        <img src="img/iconos/servicio1.svg" alt="Gestión técnica">
+        <img src="img/iconos/wrench_11563108.png" alt="Gestión técnica">
         <h3>Asesoramiento técnico</h3>
       </div>
       <div class="servicio">
-        <img src="img/iconos/servicio2.svg" alt="Organismos">
+        <img src="img/iconos/branding_17128681.png" alt="Organismos">
         <h3>Gestión ante organismos</h3>
       </div>
     </div>
   </section>
   <section class="institucional" data-aos="fade-up">
     <div class="container inst-content">
-      <img src="img/img ejecutivo.png" alt="Institucional">
+      <img src="img/banner.png" alt="Institucional">
     </div>
   </section>
   <footer>
     <div class="container footer-content">
-      <img src="img/consulting_versioncolor_sinfondo.png" alt="Consulting">
-      <p>Consulting © 2025 – Todos los derechos reservados.</p>
+      <img src="img/Logo_completo_consulting.png" alt="Consulting">
+      <p>“Simplifying and adding value to your business…”</p>
       <ul class="footer-links">
-        <li><a href="mailto:contacto@consulting.com.ar">contacto@consulting.com.ar</a></li>
-        <li><a href="https://consulting.com.ar">consulting.com.ar</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Aviso Legal</a></li>
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Términos y Condiciones</a></li>
+        <li>
+          <a href="https://wa.me/5491168973125" target="_blank"><img src="img/social/whatsapp_11376581.png" alt="WhatsApp"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/Consulting_Ar" target="_blank">
+            <img src="img/social/social_13670350.png" alt="LinkedIn">
+          </a>
+        </li>
       </ul>
     </div>
   </footer>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="js/main.js"></script>
-  <a href="https://wa.me/5491152580000" class="whatsapp-btn" aria-label="WhatsApp">WhatsApp</a>
+  <a href="https://wa.me/5491168973125" class="whatsapp-btn" aria-label="WhatsApp">
+    <img src="img/social/whatsapp_11376581.png" alt="WhatsApp">
+  </a>
 </body>
 </html>
