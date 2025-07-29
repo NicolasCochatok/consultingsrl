@@ -26,4 +26,31 @@ document.addEventListener('DOMContentLoaded', () => {
       form.reset();
     });
   }
+
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = lightbox ? lightbox.querySelector('img') : null;
+  const lightboxClose = document.getElementById('lightbox-close');
+
+  galleryItems.forEach(item => {
+    item.addEventListener('click', e => {
+      e.preventDefault();
+      if (!lightboxImg) return;
+      lightboxImg.src = item.getAttribute('href');
+      lightbox.classList.add('show');
+    });
+  });
+
+  if (lightboxClose) {
+    lightboxClose.addEventListener('click', () => {
+      lightbox.classList.remove('show');
+    });
+  }
+  if (lightbox) {
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) {
+        lightbox.classList.remove('show');
+      }
+    });
+  }
 });
