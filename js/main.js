@@ -18,6 +18,21 @@ document.addEventListener('DOMContentLoaded', () => {
       header.classList.remove('scrolled');
     }
   });
+
+  const heroSlides = document.querySelectorAll('.hero-slider .slide');
+  const prevBtn = document.querySelector('.hero-slider .prev');
+  const nextBtn = document.querySelector('.hero-slider .next');
+  let heroCurrent = 0;
+  function showHeroSlide(index){
+    heroSlides[heroCurrent].classList.remove('active');
+    heroCurrent = (index + heroSlides.length) % heroSlides.length;
+    heroSlides[heroCurrent].classList.add('active');
+  }
+  if(heroSlides.length){
+    setInterval(()=>showHeroSlide(heroCurrent+1),5000);
+    if(prevBtn) prevBtn.addEventListener('click',()=>showHeroSlide(heroCurrent-1));
+    if(nextBtn) nextBtn.addEventListener('click',()=>showHeroSlide(heroCurrent+1));
+  }
   const form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', (e) => {
