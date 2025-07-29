@@ -11,18 +11,19 @@
 <body>
   <header>
     <div class="top-bar">
-      <span>☎ +54 11 5258-XXXX</span>
+      <span>☎ +54 9 11 6897 3125</span>
       <span>✉ <a href="mailto:contacto@consulting.com.ar">contacto@consulting.com.ar</a></span>
     </div>
     <div class="container header-content">
-      <img src="img/Logo_completo_consulting.png" alt="Consulting" class="logo">
+      <a href="index.html" class="logo-link">
+        <img src="img/consulting_versioncolor_sinfondo.png" alt="Consulting" class="logo">
+      </a>
       <nav id="nav">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="servicios.html">Servicios</a></li>
           <li><a href="contacto.html" class="active">Contacto</a></li>
-          <li><a href="clientes.html">Acceso a Clientes</a></li>
         </ul>
       </nav>
       <button class="menu-toggle" id="menu-toggle">☰</button>
@@ -30,33 +31,50 @@
   </header>
   <main class="contacto" data-aos="fade-up">
     <div class="container form-container">
-      <form>
-        <label>Nombre<input type="text" required></label>
-        <label>Empresa<input type="text"></label>
-        <label>Email<input type="email" required></label>
-        <label>Mensaje<textarea required></textarea></label>
+      <p class="intro">Contanos tu proyecto o producto y te respondemos con la ruta de certificación más conveniente. Estamos para ayudarte.</p>
+      <form id="contact-form" action="mailto:contacto@consulting.com.ar" method="post" enctype="text/plain">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="text" name="empresa" placeholder="Empresa">
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <textarea name="mensaje" placeholder="Tu mensaje..." rows="5" required></textarea>
         <button type="submit" class="btn">Enviar consulta</button>
+        <small>Al enviar este formulario aceptás que nos contactemos con vos para responder a tu consulta. Tus datos no serán compartidos.</small>
       </form>
       <p class="help">Nos comunicaremos dentro de las próximas 24 hs.</p>
       <div class="map-container" data-aos="fade-up">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.79!2d-58.42!3d-34.61!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMzTCsDM2JzM2LjAiUyA1OMKwMjUnMTYuMCJX!5e0!3m2!1ses!2sar!4v1713111800000!5m2!1ses!2sar" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps?q=San%20Mart%C3%ADn%20683%204D,%20C1004%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires,%20Argentina&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-</div>
+    <p class="direct">
+      Teléfono/WhatsApp: +54 9 11 6897 3125<br>
+      Email: <a href="mailto:contacto@consulting.com.ar">contacto@consulting.com.ar</a><br>
+      Dirección: San Martín 683 4D, C1004 CABA, Argentina
+    </p>
+  </div>
   </main>
   <footer>
     <div class="container footer-content">
-      <img src="img/consulting_versioncolor_sinfondo.png" alt="Consulting">
-      <p>Consulting © 2025 – Todos los derechos reservados.</p>
+      <img src="img/Logo_completo_consulting.png" alt="Consulting">
+      <p>“Simplifying and adding value to your business…”</p>
       <ul class="footer-links">
-        <li><a href="mailto:contacto@consulting.com.ar">contacto@consulting.com.ar</a></li>
-        <li><a href="https://consulting.com.ar">consulting.com.ar</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Aviso Legal</a></li>
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Términos y Condiciones</a></li>
+        <li>
+          <a href="https://wa.me/5491168973125" target="_blank"><img src="img/social/whatsapp_11376581.png" alt="WhatsApp"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/Consulting_Ar" target="_blank">
+            <img src="img/social/social_13670350.png" alt="LinkedIn">
+          </a>
+        </li>
       </ul>
     </div>
   </footer>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="js/main.js"></script>
-  <a href="https://wa.me/5491152580000" class="whatsapp-btn" aria-label="WhatsApp">WhatsApp</a>
+  <a href="https://wa.me/5491168973125" class="whatsapp-btn" aria-label="WhatsApp">
+    <img src="img/social/whatsapp_11376581.png" alt="WhatsApp">
+  </a>
 </body>
 </html>
