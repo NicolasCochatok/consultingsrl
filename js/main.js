@@ -18,12 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
       header.classList.remove('scrolled');
     }
   });
-  const form = document.querySelector('.contacto form');
+  const form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', (e) => {
-      e.preventDefault();
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        alert('Por favor completa el formulario correctamente.');
+        return;
+      }
       alert('Consulta enviada');
-      form.reset();
     });
   }
 
@@ -52,5 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox.classList.remove('show');
       }
     });
+  }
+
+  if (window.ScrollReveal) {
+    ScrollReveal().reveal('section', { distance: '50px', duration: 800, easing: 'ease-out', origin: 'bottom' });
+    ScrollReveal().reveal('.card, .servicio, .gallery-item', { interval: 100 });
   }
 });

@@ -29,12 +29,12 @@
   </header>
   <main class="contacto" data-aos="fade-up">
     <div class="container form-container">
-      <form>
-        <label>Nombre<input type="text" required></label>
-        <label>Empresa<input type="text"></label>
-        <label>Email<input type="email" required></label>
-        <label>Mensaje<textarea required></textarea></label>
-        <button type="submit" class="btn">Enviar consulta</button>
+      <form id="contact-form" action="mailto:contacto@consulting.com.ar" method="post" enctype="text/plain">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="text" name="empresa" placeholder="Empresa">
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <textarea name="mensaje" placeholder="Tu mensaje..." rows="5" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
       </form>
       <p class="help">Nos comunicaremos dentro de las próximas 24 hs.</p>
       <div class="map-container" data-aos="fade-up">
@@ -50,12 +50,19 @@
         <li><a href="mailto:contacto@consulting.com.ar">contacto@consulting.com.ar</a></li>
         <li><a href="https://consulting.com.ar">consulting.com.ar</a></li>
         <li><a href="#">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/Consulting_Ar" target="_blank">LinkedIn</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/Consulting_Ar" target="_blank">
+            <img src="img/social/social_13670350.png" alt="LinkedIn">
+          </a>
+        </li>
       </ul>
     </div>
   </footer>
-  <script src="https://www.google.com/maps?q=San+Mart%C3%ADn+683%2C+4D%2C+Ciudad+Aut%C3%B3noma+de+Buenos+Aires+(C1004)%2C+Argentinasrc="https://unpkg.com/aos@next/dist/aos.js"output=embed"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="js/main.js"></script>
-  <a href="https://wa.me/5491168973125" class="whatsapp-btn" aria-label="WhatsApp">WhatsApp</a>
+  <a href="https://wa.me/5491168973125" class="whatsapp-btn" aria-label="WhatsApp">
+    <img src="img/social/whatsapp_11376581.png" alt="WhatsApp">
+  </a>
 </body>
 </html>
