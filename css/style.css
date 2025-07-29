@@ -1,5 +1,6 @@
 :root {
-  --color-principal: #00b7c2;
+  --color-principal: #00bcd4;
+--color-celeste: #03a9f4;
   --color-secundario: #ffffff;
   --color-fondo: #0d0d0d;
   --color-gris: #aaaaaa;
@@ -10,10 +11,10 @@
   margin: 0;
   padding: 0;
 }
-
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--color-fondo);
+  padding-top: 90px;
   color: var(--color-secundario);
   scroll-behavior: smooth;
 }
@@ -35,6 +36,7 @@ header {
   left: 0;
   z-index: 10;
 }
+header.scrolled { box-shadow: 0 2px 5px rgba(0,0,0,0.5); }
 .header-content {
   display: flex;
   align-items: center;
@@ -100,6 +102,7 @@ nav a.active {
   border-radius: 4px;
   text-decoration: none;
 }
+.btn:hover { background: var(--color-celeste); }
 
 .servicios-dest .servicio {
   text-align: center;
@@ -224,4 +227,41 @@ form input, form textarea {
   .cards {
     flex-direction: column;
   }
+}
+.top-bar {
+  background: #002b45;
+  color: var(--color-secundario);
+  font-size: 0.9rem;
+  padding: 5px 0;
+  text-align: center;
+}
+.top-bar a {
+  color: var(--color-secundario);
+  text-decoration: none;
+}
+.whatsapp-btn {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  background: var(--color-principal);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  animation: pulse 2s infinite;
+  z-index: 50;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0,188,212,0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(0,188,212,0); }
+  100% { box-shadow: 0 0 0 0 rgba(0,188,212,0); }
+}
+.map-container {
+  margin-top: 20px;
+}
+.login-container {
+  padding-top: 100px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
 }
