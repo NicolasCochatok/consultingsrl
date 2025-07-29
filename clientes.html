@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - Consulting SRL</title>
+  <title>Acceso a Clientes - Consulting SRL</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -23,27 +23,22 @@
           <li><a href="index.html">Inicio</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="contacto.html" class="active">Contacto</a></li>
-          <li><a href="clientes.html">Acceso a Clientes</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="clientes.html" class="active">Acceso a Clientes</a></li>
         </ul>
       </nav>
       <button class="menu-toggle" id="menu-toggle">☰</button>
     </div>
   </header>
-  <main class="contacto" data-aos="fade-up">
-    <div class="container form-container">
-      <form>
-        <label>Nombre<input type="text" required></label>
-        <label>Empresa<input type="text"></label>
+  <main class="login" data-aos="fade-up">
+    <div class="container login-container">
+      <h2>Acceso a Clientes</h2>
+      <form id="login-form">
         <label>Email<input type="email" required></label>
-        <label>Mensaje<textarea required></textarea></label>
-        <button type="submit" class="btn">Enviar consulta</button>
+        <label>Contraseña<input type="password" required></label>
+        <button type="submit" class="btn">Ingresar</button>
       </form>
-      <p class="help">Nos comunicaremos dentro de las próximas 24 hs.</p>
-      <div class="map-container" data-aos="fade-up">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.79!2d-58.42!3d-34.61!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMzTCsDM2JzM2LjAiUyA1OMKwMjUnMTYuMCJX!5e0!3m2!1ses!2sar!4v1713111800000!5m2!1ses!2sar" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-</div>
   </main>
   <footer>
     <div class="container footer-content">
@@ -57,8 +52,8 @@
       </ul>
     </div>
   </footer>
+  <a href="https://wa.me/5491168973125" class="whatsapp-btn" aria-label="WhatsApp">WhatsApp</a>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="js/main.js"></script>
-  <a href="https://wa.me/5491168973125" class="whatsapp-btn" aria-label="WhatsApp">WhatsApp</a>
 </body>
 </html>
