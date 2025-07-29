@@ -13,7 +13,8 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(180deg,#000 0%,#111 50%,#1a1a1a 100%);
+  background: url("../img/fondo_consultingsrl.png") no-repeat center center fixed;
+  background-size: cover;
   padding-top: 90px;
   color: var(--color-secundario);
   scroll-behavior: smooth;
