@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto - Consulting SRL</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
   <header>
@@ -36,13 +35,14 @@
         <input type="text" name="nombre" placeholder="Nombre completo" required>
         <input type="text" name="empresa" placeholder="Empresa">
         <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="text" name="producto" placeholder="Seleccione un producto">
         <textarea name="mensaje" placeholder="Tu mensaje..." rows="5" required></textarea>
         <button type="submit" class="btn">Enviar consulta</button>
         <small>Al enviar este formulario aceptás que nos contactemos con vos para responder a tu consulta. Tus datos no serán compartidos.</small>
       </form>
       <p class="help">Nos comunicaremos dentro de las próximas 24 hs.</p>
       <div class="map-container" data-aos="fade-up">
-      <iframe src="https://www.google.com/maps?q=San%20Mart%C3%ADn%20683%204D,%20C1004%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires,%20Argentina&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps?q=San%20Mart%C3%ADn%20683%204D%2C%20C1004%20Buenos%20Aires&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <p class="direct">
       Teléfono/WhatsApp: +54 9 11 6897 3125<br>
@@ -51,26 +51,16 @@
     </p>
   </div>
   </main>
-  <footer>
-    <div class="container footer-content">
-      <img src="img/Logo_completo_consulting.png" alt="Consulting">
-      <p>“Simplifying and adding value to your business…”</p>
-      <ul class="footer-links">
-        <li><a href="#">Aviso Legal</a></li>
-        <li><a href="#">Política de Privacidad</a></li>
-        <li><a href="#">Términos y Condiciones</a></li>
-        <li>
-          <a href="https://wa.me/5491168973125" target="_blank"><img src="img/social/whatsapp_11376581.png" alt="WhatsApp"></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/Consulting_Ar" target="_blank">
-            <img src="img/social/social_13670350.png" alt="LinkedIn">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<footer style="background:#fff;text-align:center;padding:60px 0">
+  <img src="img/Logo_completo_consulting.png" alt="Consulting SRL" height="48">
+  <p>Simplifying and adding value to your business…</p>
+  <div class="social">
+    <a aria-label="WhatsApp" href="https://wa.me/5491168973125"><img src="img/social/whatsapp_11376581.png" height="24"></a>
+    <a aria-label="LinkedIn" href="https://www.linkedin.com/company/consulting-ar/" target="_blank"><img src="img/social/social_13670350.png" height="24"></a>
+  </div>
+</footer>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({duration:800,once:true});</script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="js/main.js"></script>
   <a href="https://wa.me/5491168973125" class="whatsapp-btn" aria-label="WhatsApp">
