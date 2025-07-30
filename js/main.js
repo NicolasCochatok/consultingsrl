@@ -1,7 +1,7 @@
 // Activar animaciones y menú
 document.addEventListener('DOMContentLoaded', () => {
   if (window.AOS) {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 800, once: true });
   }
   const toggle = document.getElementById('menu-toggle');
   const nav = document.querySelector('nav ul');
