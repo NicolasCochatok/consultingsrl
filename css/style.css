@@ -73,7 +73,7 @@ header.scrolled { box-shadow: 0 2px 5px rgba(0,0,0,0.5); }
   padding: 10px 0;
 }
 .logo {
-  height: 70px;
+  height: 90px;
 }
 nav ul {
   display: flex;
@@ -141,7 +141,7 @@ nav a:hover {
 }
 .overlay-dark{
   position:absolute;inset:0;
-  background:rgba(0,0,0,.55);
+  background:rgba(0, 0, 0, 0.356);
 }
 .hero-content {
   position: relative;
@@ -174,7 +174,7 @@ nav a:hover {
   margin-bottom: 20px;
 }
 #que-hacemos .mini-card {
-  background: #1a1a1a;
+  background: #00000088;
   padding: 20px;
   border-radius: 8px;
   width: 260px;
@@ -197,10 +197,12 @@ nav a:hover {
 .institucional img {
   width: 100%;
   display: block;
+  background-color:#00000088;
+
 }
 
 footer {
-  background: #000;
+  background: #00000088;
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
@@ -223,6 +225,14 @@ footer {
   width: 24px;
   height: 24px;
 }
+footer img.logo-footer{        /* añade class="logo-footer" al <img> */
+  max-width:180px;
+  opacity:.80;                 /* transparencia global */
+  filter:drop-shadow(0 4px 10px rgba(0,0,0,.4));
+  border-radius:8px;           /* “esquinas” recortadas */
+  transition:opacity .3s ease;
+}
+footer img.logo-footer:hover{opacity:1;}
 
 /* Nosotros */
 .nosotros-content {
