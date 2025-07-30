@@ -1,4 +1,8 @@
-AOS.init({duration:800,once:true});
+if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  AOS.init({disable:true});
+}else{
+  AOS.init({duration:800,once:true});
+}
 const tabla={
   "Luminaria LED":{res:"237/24",norma:"IEC 60598-1"},
   "Cargador USB":{res:"237/24",norma:"IEC 62368-1"},
