@@ -190,16 +190,21 @@ nav a:hover {
   padding: 20px;
 }
 .servicios-dest img {
-  width: 60px;
-  margin-bottom: 10px;
+  width: 80px;
+  margin-bottom: 80px;
 }
 
-.institucional img {
+
+.institucional video {
   width: 100%;
+  height: 400px; /* altura tipo banner */
+  object-fit: cover; /* rellena sin deformar */
   display: block;
-  background-color:#00000088;
-
+  margin: 0 auto;
+  border-radius: 15px; /* podés ajustar si querés bordes */
 }
+
+
 
 footer {
   background: #00000088;
@@ -243,7 +248,7 @@ footer img.logo-footer:hover{opacity:1;}
   padding-top: 100px;
 }
 .nosotros-content .side-img {
-  width: 300px;
+  width: 800px;
   margin-bottom: 20px;
 }
 .nosotros-content p {
@@ -450,29 +455,46 @@ form input:focus, form textarea:focus {
 }
 
 .galeria-nosotros {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  margin-top: 40px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #0d0d0d;
 }
-.galeria-nosotros img.transition-img {
-  width: 100%;
-  transition: transform 0.5s;
+
+.transition-img {
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
 }
-.galeria-nosotros img.transition-img:hover {
+
+.transition-img:hover {
   transform: scale(1.05);
 }
 
-.carousel {
-  position: relative;
-  max-width: 400px;
-  margin: 40px auto;
-}
-.carousel img {
-  width: 100%;
-  display: none;
+/* Tamaños personalizados */
+.img-grande {
+  width: 300px;
+  height: 340px;
 }
 
-.carousel img.active {
-  display: block;
+.img-mediana {
+  width: 300px;
+  height: 340px;
 }
+
+.img-chica {
+  width: 300px;
+  height: 340px;
+}
+
+.img-alta {
+  width: 300px;
+  height: 340px;
+}
+
+
+
+

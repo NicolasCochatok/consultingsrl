@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     heroSlides[heroCurrent].classList.add('active');
   }
   if(heroSlides.length){
-    setInterval(()=>showHeroSlide(heroCurrent+1),5000);
+    setInterval(()=>showHeroSlide(heroCurrent+1),2500);
     if(prevBtn) prevBtn.addEventListener('click',()=>showHeroSlide(heroCurrent-1));
     if(nextBtn) nextBtn.addEventListener('click',()=>showHeroSlide(heroCurrent+1));
   }
@@ -85,6 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
       slides[current].classList.remove('active');
       current = (current + 1) % slides.length;
       slides[current].classList.add('active');
-    }, 3000);
+    }, 1000);
   }
 });
