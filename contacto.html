@@ -35,24 +35,17 @@
       <p class="intro">
         Contanos tu proyecto o producto y te respondemos con la ruta de certificación más conveniente. Estamos para ayudarte.
       </p>
-
-      <form id="contact-form" action="https://formsubmit.co/nicolas.gauna@consulting.com.ar" method="POST">
-        <!-- Campos ocultos -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="Nueva consulta desde el sitio web">
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html">
-
-        <!-- Campos visibles -->
+      <form id="contact-form" action="enviar.php" method="POST">
         <input type="text" name="nombre" placeholder="Nombre completo" required>
         <input type="text" name="empresa" placeholder="Empresa">
         <input type="email" name="email" placeholder="Correo electrónico" required>
         <textarea name="mensaje" placeholder="Tu mensaje..." rows="5" required></textarea>
-
         <button type="submit" class="btn">Enviar consulta</button>
-        <small>
-          Al enviar este formulario aceptás que nos contactemos con vos para responder a tu consulta. Tus datos no serán compartidos.
-        </small>
       </form>
+
+      <small>
+        Al enviar este formulario aceptás que nos contactemos con vos para responder a tu consulta. Tus datos no serán compartidos.
+      </small>
 
       <p class="help">Nos comunicaremos dentro de las próximas 24 hs.</p>
 

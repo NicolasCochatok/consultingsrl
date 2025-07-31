@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Por favor completa el formulario correctamente.');
         return;
       }
-      alert('Consulta enviada');
+      
     });
   }
 
