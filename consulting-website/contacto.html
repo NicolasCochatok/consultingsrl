@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Consulting SRL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <header>
+    <div class="top-bar">☎ +54 9 11 6897 3125 &nbsp;|&nbsp; ✉ contacto@consulting.com.ar</div>
+    <nav>
+      <a href="index.html"><img src="img/consulting_versioncolor_sinfondo.png" alt="Consulting" height="48"></a>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="contacto" style="max-width:680px;margin:auto;padding:60px 20px">
+    <div data-aos="fade-up">
+      <h2>Solicitar cotización</h2>
+      <form id="form-contacto">
+        <input name="nombre"  placeholder="Nombre completo" required>
+        <input name="empresa" placeholder="Empresa">
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <select name="producto" id="producto" required>
+          <option value="">Seleccione un producto</option>
+          <option>Luminaria LED</option>
+          <option>Cargador USB</option>
+          <option>Microondas</option>
+          <option>Heladera</option>
+        </select>
+        <textarea name="mensaje" placeholder="Mensaje adicional" rows="4"></textarea>
+        <button class="btn" type="submit" aria-label="Enviar consulta">Enviar consulta</button>
+      </form>
+      <iframe src="https://www.google.com/maps?q=San%20Mart%C3%ADn%20683%204D%20C1004%20Buenos%20Aires&output=embed" width="100%" height="300" style="border:0;margin-top:40px" loading="lazy"></iframe>
+    </div>
+  </section>
+  <footer>
+    <img src="img/Logo_completo_consulting.png" alt="Consulting SRL" height="40"><br>
+    <small>Simplifying and adding value to your business…</small>
+    <div style="margin-top:1rem;">
+      <a href="https://wa.me/5491168973125" target="_blank" aria-label="WhatsApp"><img src="img/social/whatsapp_11376581.png" alt="WhatsApp" width="24"></a>
+      <a href="https://www.linkedin.com/in/Consulting_Ar" target="_blank" aria-label="LinkedIn" style="margin-left:8px;"><img src="img/social/social_13670350.png" alt="LinkedIn" width="24"></a>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
